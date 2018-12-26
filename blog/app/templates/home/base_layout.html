@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% block title %} {% endblock %}</title>
+    <link href="/static/css/home/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/home/all.min.css" rel="stylesheet">
+    <link href="/static/css/home/clean-blog.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/element.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="/static/js/home/clean-blog.js"></script>
+    <script src="/static/js/vue.js"></script>
+    <script src="/static/js/element.js"></script>
+
+    {% block extCss %}{% endblock %}
+    <meta charset="UTF-8">
+</head>
+<body>
+{% include 'home/header.html' %}
+{% block body %}
+{% endblock %}
+{% include 'home/footer.html' %}
+</body>
+  {% block extJs %}{% endblock %}
+</html>
